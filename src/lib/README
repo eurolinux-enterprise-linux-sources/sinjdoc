@@ -1,0 +1,6 @@
+Miscellaneous libraries to make everything work:
+ 
+  jutil.jar -- JUtil collections library from cscott.net (GPL)
+
+  cup.jar -- CUP parser generator v0.10k from
+              http://www.cs.princeton.edu/~appel/modern/java/CUP

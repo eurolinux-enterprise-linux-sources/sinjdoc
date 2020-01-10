@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="@CHARSET@"?>@IF_FALSE@
+<!--microsoft IE doesn't like this, because as XML we're missing HTML styles-->
+<?xml-stylesheet href="stylesheet.css" type="text/css"?>@END@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=@CHARSET@" />
+    <title>@WINDOWTITLE@</title>
+    <meta name="generator" content="@GENERATOR@" />
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <base target="classFrame" />
+  </head>
+  <frameset cols="20%,80%">
+  <frame src="allclasses-frame.html" name="packageFrame" />
+  <frame src="@SPLIT@" name="classFrame" />
+  <noframes>
+  <body>
+  <p>Your browser does not support frames.   Please use the
+     <a href="@SPLIT@">non-frames version</a>.
+  </p>
+  </body>
+  </noframes>
+  </frameset>
+</html>

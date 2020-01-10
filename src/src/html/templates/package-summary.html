@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="@CHARSET@"?>@IF_FALSE@
+<!--microsoft IE doesn't like this, because as XML we're missing HTML styles-->
+<?xml-stylesheet href="@ROOT@stylesheet.css" type="text/css"?>@END@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>@PKGNAME@@TITLESUFFIX@</title>
+    <meta name="keywords" content="@PKGNAME@ package" />
+    <meta name="generator" content="@GENERATOR@" />
+    <link href="@ROOT@stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="Index" href="@ROOT@index-all.html" />
+    <link rel="Start" href="@ROOT@overview-summary.html" />
+    <link rel="Up" href="@ROOT@overview-summary.html" />
+    <link rel="Help" href="@ROOT@help-doc.html" />
+  </head>
+  <body class="packagePage bigframe">
+   <div class="navbar">
+    <p class="nav navtop">
+      <span class="over"><a href="@ROOT@overview-summary.html">Overview</a></span>
+      <span class="package selected">Package</span>
+      <span class="class">Class</span>
+      <span class="use"><a href="package-use.html">Use</a></span>
+      <span class="tree"><a href="package-tree.html">Tree</a></span>
+      <span class="deprecated"><a href="@ROOT@deprecated-list.html">Deprecated</a></span>
+      <span class="index"><a href="@ROOT@index-all.html">Index</a></span>
+      <span class="help"><a href="@ROOT@help-doc.html">Help</a></span>
+    </p>
+    <p class="nav navmid">
+      <span class="prevnext">
+        <span class="prev">Prev Package</span>
+        <span class="next">Next Package</span>
+      </span>
+      <span class="framesel">
+        <span class="frames"><a href="@ROOT@index.html" target="_top">Frames</a></span>
+        <span class="noframes"><a href="package-summary.html" target="_top">NoFrames</a></span>
+      </span>
+      <span class="allclasses"><a href="@ROOT@allclasses-noframe.html">All Classes</a></span>
+   </p>
+    <div class="navtitle">
+     @HEADER@
+    </div>
+    <p class="clear"><!--empty--></p>
+   </div>
+   <h1>Package @PKGNAME@</h1>
+@IF_TAGS@
+   <p>
+   @TAG_SUMMARY@
+   </p>
+   <p class="tag tag_see">
+     <span class="tagName">See:</span>
+     <span class="tagContents"><a href="#package_description" class="seetag">Description</a></span>
+   </p>
+@END@
+@FORALL_INTERFACES@
+@IF_FIRST@
+   <table class="interface_summary summary linklist">
+     <tr><th colspan="2">Interface Summary</th></tr>
+@END@
+     <tr><td>@CLASSLINK_P@</td><td>@TAG_SUMMARY@</td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_ORDINARYCLASSES@
+@IF_FIRST@
+   <table class="class_summary summary linklist">
+     <tr><th colspan="2">Class Summary</th></tr>
+@END@
+     <tr><td>@CLASSLINK_P@</td><td>@TAG_SUMMARY@</td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_EXCEPTIONS@
+@IF_FIRST@
+   <table class="exception_summary summary linklist">
+     <tr><th colspan="2">Exception Summary</th></tr>
+@END@
+     <tr><td>@CLASSLINK_P@</td><td>@TAG_SUMMARY@</td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_ERRORS@
+@IF_FIRST@
+   <table class="error_summary summary linklist">
+     <tr><th colspan="2">Error Summary</th></tr>
+@END@
+     <tr><td>@CLASSLINK_P@</td><td>@TAG_SUMMARY@</td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+
+   <div class="description">
+@IF_TAGS@
+   <h2><a name="package_description" id="package_description">
+   Package @PKGNAME@ Description:
+   </a></h2>
+   @TAGS@
+   </div>
+@END@
+   <div class="navbar">
+    <p class="nav navtop">
+      <span class="over"><a href="@ROOT@overview-summary.html">Overview</a></span>
+      <span class="package selected">Package</span>
+      <span class="class">Class</span>
+      <span class="use"><a href="package-use.html">Use</a></span>
+      <span class="tree"><a href="package-tree.html">Tree</a></span>
+      <span class="deprecated"><a href="@ROOT@deprecated-list.html">Deprecated</a></span>
+      <span class="index"><a href="@ROOT@index-all.html">Index</a></span>
+      <span class="help"><a href="@ROOT@help-doc.html">Help</a></span>
+    </p>
+    <p class="nav navmid">
+      <span class="prevnext">
+        <span class="prev">Prev Package</span>
+        <span class="next">Next Package</span>
+      </span>
+      <span class="framesel">
+        <span class="frames"><a href="@ROOT@index.html" target="_top">Frames</a></span>
+        <span class="noframes"><a href="package-summary.html" target="_top">NoFrames</a></span>
+      </span>
+      <span class="allclasses"><a href="@ROOT@allclasses-noframe.html">All Classes</a></span>
+   </p>
+    <div class="navtitle">
+     @FOOTER@
+    </div>
+    <p class="clear"><!--empty--></p>
+   </div>
+   <div class="bottom">@BOTTOM@</div>
+   </body>
+</html>

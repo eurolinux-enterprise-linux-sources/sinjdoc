@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="@CHARSET@"?>@IF_FALSE@
+<!--microsoft IE doesn't like this, because as XML we're missing HTML styles-->
+<?xml-stylesheet href="@ROOT@stylesheet.css" type="text/css"?>@END@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>@CLASSSHORTNAME@@TYPEPARAMS_SUMMARY@@TITLESUFFIX@</title>
+    <meta name="keywords" content="@CLASSNAME@,@CLASSSHORTNAME@ @CLASSTYPE@" />
+    <meta name="generator" content="@GENERATOR@" />
+    <link href="@ROOT@stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="Index" href="@ROOT@index-all.html" />
+    <link rel="Start" href="@ROOT@overview-summary.html" />
+    <link rel="Up" href="package-summary.html" />
+    <link rel="Help" href="@ROOT@help-doc.html" />
+  </head>
+  <body class="classPage bigframe">
+   <div class="navbar">
+    <p class="nav navtop">
+      <span class="over"><a href="@ROOT@overview-summary.html">Overview</a></span>
+      <span class="package"><a href="package-summary.html">Package</a></span>
+      <span class="class selected">Class</span>
+      <span class="use"><a href="class-use/@CLASSSHORTNAME@.html">Use</a></span>
+      <span class="tree"><a href="package-tree.html">Tree</a></span>
+      <span class="deprecated"><a href="@ROOT@deprecated-list.html">Deprecated</a></span>
+      <span class="index"><a href="@ROOT@index-all.html">Index</a></span>
+      <span class="help"><a href="@ROOT@help-doc.html">Help</a></span>
+    </p>
+    <p class="nav navmid">
+      <span class="prevnext">
+       <span class="prev">Prev Class</span>
+       <span class="next">Next Class</span>
+      </span>
+      <span class="framesel">
+       <span class="frames"><a href="@ROOT@index.html" target="_top">Frames</a></span>
+       <span class="noframes"><a href="@CLASSSHORTNAME@.html" target="_top">NoFrames</a></span>
+      </span>
+      <span class="allclasses"><a href="@ROOT@allclasses-noframe.html">All Classes</a></span>
+   </p>
+   <p class="nav navbot">
+      <span class="summary">Summary:
+       <span class="nested">@IF_NESTED@<a href="#nested_class_summary">@END@Nested@IF_NESTED@</a>@END@</span>
+       <span class="field">@IF_FIELDS@<a href="#field_summary">@END@Field@IF_FIELDS@</a>@END@</span>
+       <span class="constr">@IF_CONSTRUCTORS@<a href="#constructor_summary">@END@Constr@IF_CONSTRUCTORS@</a>@END@</span>
+       <span class="method">@IF_METHODS@<a href="#method_summary">@END@Method@IF_METHODS@</a>@END@</span>
+      </span>
+      <span class="detail">Detail:
+       <span class="field">@IF_FIELDS@<a href="#field_detail">@END@Field@IF_FIELDS@</a>@END@</span>
+       <span class="constr">@IF_CONSTRUCTORS@<a href="#constructor_detail">@END@Constr@IF_CONSTRUCTORS@</a>@END@</span>
+       <span class="method">@IF_METHODS@<a href="#method_detail">@END@Method@IF_METHODS@</a>@END@</span>
+      </span>
+   </p>
+    <div class="navtitle">
+     @HEADER@
+    </div>
+    <p class="clear"><!--empty--></p>
+   </div>
+   <p class="packageName">@PKGNAME@</p>
+   <h1>@IF_INTERFACE@ Interface @END@ @IFNOT_INTERFACE@ Class @END@ @CLASSSHORTNAME@@TYPEPARAMS_SUMMARY@</h1>
+<!--
+   <p class="enclosing">
+   Enclosing class/interface: @OUTER@
+   </p>
+-->
+@IF_INTERFACE@
+<!--
+   @IF_SUPERINTERFACES@
+   <p class="superinterfaces">
+   All superinterfaces: @ALL_SUPERINTERFACES@
+   </p>
+   @END@
+   <p class="superinterfaces">
+   All known subinterfaces: @ALL_SUBINTERFACES@
+   </p>
+   <p class="implementingClasses">
+   All known implementing classes: @ALL_IMPLEMENTATIONS@
+   </p>
+-->
+@END@
+@IFNOT_INTERFACE@
+   <!-- XXX class hierarchy diagram goes here -->
+<!--
+   @IF_SUPERINTERFACES@
+   <p class="implementedInterfaces">
+   All implemented interfaces: @ALL_SUPERINTERFACES@
+   </p>
+   @END@
+   <p class="directSubclasses">
+   Direct known subclasses: @ALL_SUBCLASSES@
+   </p>
+-->
+@END@
+
+   <p class="declaration">@MODIFIERS@
+   @IF_INTERFACE@ interface @END@ @IFNOT_INTERFACE@ class @END@
+   <span class="className">@CLASSSHORTNAME@@TYPEPARAMS_DECL@</span>
+   @IF_INTERFACE@@IF_SUPERINTERFACES@
+      <span class="extends">extends @SUPERINTERFACES@</span>
+   @END@@END@
+   @IFNOT_INTERFACE@
+      @IF_SUPERCLASS@
+      <span class="extends">extends @SUPERCLASS@</span>
+      @END@
+      @IF_SUPERINTERFACES@
+        <span class="implements">implements @SUPERINTERFACES@</span>
+      @END@
+   @END@
+   </p>
+
+   <div class="description">
+   @TAGS@
+   </div>
+
+@FORALL_NESTED@
+@IF_FIRST@
+   <table class="nested_class_summary summary">
+     <tr><th colspan="2"><a name="nested_class_summary" id="nested_class_summary">Nested Class Summary</a></th></tr>
+@END@
+     <tr><td>@MODIFIER_SUMMARY@ @IF_INTERFACE@interface@END@@IFNOT_INTERFACE@class@END@</td><td><span class="memberName">@CLASSLINK_P@</span><div class="memberDescription">@TAG_SUMMARY@</div></td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_FIELDS@
+@IF_FIRST@
+   <table class="field_summary summary">
+     <tr><th colspan="2"><a name="field_summary" id="field_summary">Field Summary</a></th></tr>
+@END@
+     <tr><td>@MODIFIER_SUMMARY@ @FIELD_TYPE@</td><td><span class="memberName">@MEMBER_NAME_LINK@</span><div class="memberDescription">@TAG_SUMMARY@</div></td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_CONSTRUCTORS@
+@IF_FIRST@
+   <table class="constructor_summary summary">
+     <tr><th colspan="2"><a name="constructor_summary" id="constructor_summary">Constructor Summary</a></th></tr>
+@END@
+     <tr><td>@MODIFIER_SUMMARY@ @TYPEPARAMS_LINK@</td><td><span class="memberName">@MEMBER_NAME_LINK@(@METHOD_PARAMS@)</span><div class="memberDescription">@TAG_SUMMARY@</div></td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+@FORALL_METHODS@
+@IF_FIRST@
+   <table class="method_summary summary">
+     <tr><th colspan="2"><a name="method_summary" id="method_summary">Method Summary</a></th></tr>
+@END@
+     <tr><td>@MODIFIER_SUMMARY@ @TYPEPARAMS_LINK@ @METHOD_RETURN_TYPE@</td><td><span class="memberName">@MEMBER_NAME_LINK@(@METHOD_PARAMS@)</span><div class="memberDescription">@TAG_SUMMARY@</div></td></tr>
+@IF_LAST@
+   </table>
+@END@
+@END@
+
+<!--
+   <p class="inherited">
+    <span class="header">Methods inherited from class java.util.<a
+   href="AbstractCollection.html">AbstractCollection</a></span>
+    <a href="#addAll">addAll</a>
+    <a href="#contains">contains</a>
+   </p>
+   <p class="inherited">
+    <span class="header">Methods inherited from class java.lang.<a
+   href="Object.html">Object</a></span>
+    <a href="#addAll">clone</a>
+    <a href="#contains">finalize</a>
+   </p>
+   <p class="inherited">
+    <span class="header">Methods inherited from interface java.util.<a
+   href="List.html">List</a></span>
+    <a href="#addAll">addAll</a>
+    <a href="#contains">contains</a>
+   </p>
+-->
+
+@FORALL_FIELDS@
+@IF_FIRST@
+   <h2><a name="field_detail" id="field_detail">Field Detail</a></h2>
+@END@
+   <h3><a name="@MEMBER_NAME@" id="@MEMBER_NAME@">@MEMBER_NAME@</a></h3>
+   <div class="memberName">@MODIFIERS@ @FIELD_TYPE@ @MEMBER_NAME@</div>
+   <div class="memberDescription">@TAGS@</div>
+@END@
+
+@FORALL_CONSTRUCTORS@
+@IF_FIRST@
+   <h2><a name="constructor_detail" id="constructor_detail">Constructor Detail</a></h2>
+@END@
+   <h3><a name="@MEMBER_NAME@@METHOD_SIGNATURE@" id="@MEMBER_NAME@@METHOD_SIGNATURE@">@MEMBER_NAME@</a></h3>
+   <div class="memberName">@MODIFIERS@ @TYPEPARAMS_DECL@ @MEMBER_NAME@(@METHOD_PARAMS@)</div>
+   <div class="memberDescription">@TAGS@</div>
+@END@
+
+@FORALL_METHODS@
+@IF_FIRST@
+   <h2><a name="method_detail" id="method_detail">Method Detail</a></h2>
+@END@
+   <h3><a name="@MEMBER_NAME@@METHOD_SIGNATURE@" id="@MEMBER_NAME@@METHOD_SIGNATURE@">@MEMBER_NAME@</a></h3>
+   <div class="memberName">@MODIFIERS@ @TYPEPARAMS_DECL@ @METHOD_RETURN_TYPE@ @MEMBER_NAME@(@METHOD_PARAMS@)</div>
+   <div class="memberDescription">@TAGS@</div>
+@END@
+   
+   <div class="navbar">
+    <p class="nav navtop">
+      <span class="over"><a href="@ROOT@overview-summary.html">Overview</a></span>
+      <span class="package"><a href="package-summary.html">Package</a></span>
+      <span class="class selected">Class</span>
+      <span class="use"><a href="class-use/@CLASSSHORTNAME@.html">Use</a></span>
+      <span class="tree"><a href="package-tree.html">Tree</a></span>
+      <span class="deprecated"><a href="@ROOT@deprecated-list.html">Deprecated</a></span>
+      <span class="index"><a href="@ROOT@index-all.html">Index</a></span>
+      <span class="help"><a href="@ROOT@help-doc.html">Help</a></span>
+    </p>
+    <p class="nav navmid">
+      <span class="prevnext">
+       <span class="prev">Prev Class</span>
+       <span class="next">Next Class</span>
+      </span>
+      <span class="framesel">
+       <span class="frames"><a href="@ROOT@index.html" target="_top">Frames</a></span>
+       <span class="noframes"><a href="@CLASSSHORTNAME@.html" target="_top">NoFrames</a></span>
+      </span>
+      <span class="allclasses"><a href="@ROOT@allclasses-noframe.html">All Classes</a></span>
+   </p>
+   <p class="nav navbot">
+      <span class="summary">Summary:
+       <span class="nested">@IF_NESTED@<a href="#nested_class_summary">@END@Nested@IF_NESTED@</a>@END@</span>
+       <span class="field">@IF_FIELDS@<a href="#field_summary">@END@Field@IF_FIELDS@</a>@END@</span>
+       <span class="constr">@IF_CONSTRUCTORS@<a href="#constructor_summary">@END@Constr@IF_CONSTRUCTORS@</a>@END@</span>
+       <span class="method">@IF_METHODS@<a href="#method_summary">@END@Method@IF_METHODS@</a>@END@</span>
+      </span>
+      <span class="detail">Detail:
+       <span class="field">@IF_FIELDS@<a href="#field_detail">@END@Field@IF_FIELDS@</a>@END@</span>
+       <span class="constr">@IF_CONSTRUCTORS@<a href="#constructor_detail">@END@Constr@IF_CONSTRUCTORS@</a>@END@</span>
+       <span class="method">@IF_METHODS@<a href="#method_detail">@END@Method@IF_METHODS@</a>@END@</span>
+      </span>
+   </p>
+    <div class="navtitle">
+     @FOOTER@
+    </div>
+    <p class="clear"><!--empty--></p>
+   </div>
+   <div class="bottom">@BOTTOM@</div>
+   </body>
+</html>
